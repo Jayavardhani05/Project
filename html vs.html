@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            header{
+                grid-area: header;
+                background-color: lightpink;
+                text-align:center;
+                border-radius: 5px;
+            }
+            main{
+              
+                border-radius: 5px;
+                background-color: beige;
+            }
+            footer{
+                grid-area: footer;
+                background-color: olivedrab;
+            }
+            nav{
+                grid-area: nav;
+                background-color: lemonchiffon;
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                gap: 20px;
+            }
+            nav ul {
+               display: flex;    
+               list-style: none;    
+               padding: 0;
+               margin: 0;
+               gap: 30px;  
+               float:inline-start;      
+            }
+            aside{
+         
+                border-radius: 5px;
+                background-color: orange;
+            }
+        
+            .container{
+                display:grid;
+                grid-template-areas: 
+                "header header"
+                "nav nav"
+                "aside main"
+                "footer footer";
+                grid-template-rows: 120px 60px  1fr 45px;
+                grid-template-columns: 200px 1fr;
+                height:100vh;
+            }
+              
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>My Webpage</h1>
+                <h4>Using CSS Grid Layout</h4>
+            </header>
+            <nav>
+               <ul>
+                <li>HOME</li>
+                <li>MENU</li>
+                <li>SERVICES</li>
+                <li>CONTACTS</li>
+               </ul>
+              
+            </nav>
+      
+            <aside>
+                <h3>SUBHEADINGS</h3>
+                <ul>
+                    <li>MODULE 1</li>
+                    <li>MODULE 2</li>
+                    <li>MODULE 3</li>
+                </ul>
+            </aside>
+            <main>
+                <p>Welcome to our website, a place where creativity and technology come together to build meaningful digital experiences. This platform is designed to provide users with useful information, engaging content, and a smooth browsing experience. Whether you are exploring our services, learning something new, or simply discovering what we offer, our goal is to make your visit enjoyable and valuable. We believe that innovation, simplicity, and quality are the keys to creating a website that truly serves its users.</p>
+            </main>
+            <footer>
+                <p>Kindly contact the admin for further informations.</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
